@@ -1,3 +1,6 @@
+
+
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 @import 'normalize.css';
 
@@ -84,23 +87,19 @@ h1::after {
 }
 
 
+
 .tiles {
-    display: grid;
-    width: clamp(var(--lower), var(--mid), var(--upper));
-    display: flex;
-    flex-direction: column-reverse;
-    justify-self: center;
-    translate: 0 calc(50% + var(--gap));
+	display: grid;
+	width: clamp(var(--lower), var(--mid), var(--upper));
+	display: flex;
+	flex-direction: column-reverse;
+	justify-self: center;
+	translate: 0 calc(50% + (var(--gap)));
     margin-right: 100px;
 }
-
 .tile {
-    height: var(--gap);
-    position: relative;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+	height: var(--gap);
+	position: relative;
 }
 hr {
 	height: .1px;
@@ -170,14 +169,17 @@ article p {
 
 .title-wrap {
 	align-self: end;
-    font-size: 60px;
+    font-size: 80px;
+	
     
 }
 
 h2{
     margin: 0px;
     color: aliceblue;
-	font-size: 50px;
+	font-size: 60px;
+	line-height: 85px;
+	font-weight: lighter !important;
 }
 .content-wrap {
 	align-self: start;
@@ -225,6 +227,8 @@ h2{
 	}
 	.section--one {
 		view-timeline-name: --section-one;
+		margin-left: 550px;
+
 	}
   @media(min-width: 768px) {
     .section--one {

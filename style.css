@@ -54,7 +54,7 @@ section {
 .reveal {
   font-kerning: none;
   /* text-transform: uppercase; */
-  font-weight: 300;
+  font-weight: lighter !important;
   font-size: 2rem;
   line-height: 1.4;
 }
