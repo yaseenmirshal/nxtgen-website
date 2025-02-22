@@ -23,13 +23,25 @@
         <li><a href="#">Contact</a></li>
     </ul>
 
-    <!-- Right-side Icons -->
+    <!-- Right-side Icons (hidden on mobile) -->
     <div class="nav-icons">
         <a href="tel:+123456789" class="icon"><i class="fas fa-phone"></i></a>
         <a href="#" class="icon"><i class="fas fa-search"></i></a>
-        <button class="toggle-menu"><i class="fas fa-bars"></i></button>
     </div>
+
+    <!-- Toggle Button (visible on mobile) -->
+    <button class="toggle-menu"><i class="fas fa-bars"></i></button>
 </nav>
+
+<script>
+  // Toggle the navbar links on mobile
+  const toggleButton = document.querySelector('.toggle-menu');
+  const navLinks = document.querySelector('.nav-links');
+  
+  toggleButton.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
 <!-- partial:index.partial.html -->
 
 <!-- video section -->
@@ -60,7 +72,7 @@
 
 
   <div class="iframe-container" >
-  <iframe  src="scrollanim.html" 
+  <iframe  src="./dist/scrollanim.html" 
   width="100%" 
   height="100%" 
   style="border:none; overflow:auto;" 

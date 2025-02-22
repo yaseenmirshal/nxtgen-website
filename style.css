@@ -76,8 +76,7 @@ section {
   background: linear-gradient(135deg, #5A3E36, #3E2723);
   transform: scale(1.05);
 }
-
-/* navabr */
+/* Navbar */
 .navbar {
   display: flex;
   width: 100%;
@@ -112,12 +111,55 @@ section {
   color: #fff;
   font-size: .6rem;
   transition: 0.3s;
-  font-weight:lighter;
+  font-weight: lighter;
 }
 
 .navbar .nav-links a:hover {
   color: #ffcc00;
 }
+
+/* Right-side Icons */
+.navbar .nav-icons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .navbar .nav-links {
+    display: none; /* Hide nav links initially */
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: #333;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 20px 0;
+  }
+
+  .navbar .nav-links.active {
+    display: flex; /* Display when active */
+  }
+
+  .navbar .toggle-menu {
+    display: block;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  .navbar .toggle-menu i {
+    color: #fff;
+  }
+
+  .navbar .nav-icons {
+    display: none; /* Hide right icons on mobile */
+  }
+}
+
 
 /* section1 */
 
