@@ -93,13 +93,17 @@ h1::after {
 	width: clamp(var(--lower), var(--mid), var(--upper));
 	display: flex;
 	flex-direction: column-reverse;
-	justify-self: center;
-	translate: 0 calc(50% + (var(--gap)));
-    margin-right: 100px;
+	/* justify-self: center; */
+	translate: 0 calc(70% + (var(--gap)));
+    /* margin-right: 200px; */
+	
 }
 .tile {
-	height: var(--gap);
-	position: relative;
+	width: 100%;
+	height: 200px; 
+	object-fit: cover; 
+	/* margin-top: 90px; */
+
 }
 hr {
 	height: .1px;
@@ -120,7 +124,7 @@ hr {
 .tile::after,
 .tile::before {
 	content: '';
-	background-image: url(https://assets.codepen.io/605876/translucent-panel.png);
+	/* background-image: url(https://assets.codepen.io/605876/translucent-panel.png); */
 	position: absolute;
 	width: 100%;
 	aspect-ratio: 1160 / 521;
@@ -131,11 +135,11 @@ hr {
 }
 .tile::after {
 	opacity: 0;
-	background-image: url(https://assets.codepen.io/605876/color-panel.png);
+	/* background-image: url(https://assets.codepen.io/605876/color-panel.png); */
 	filter: hue-rotate(var(--r, 0deg));
 }
 .tile:nth-of-type(1)::after {
-	background-image: url(https://assets.codepen.io/605876/bottom-panel.png);
+	/* background-image: url(https://assets.codepen.io/605876/bottom-panel.png); */
 	filter: hue-rotate(var(--r, 0deg)) brightness(2);
 }
 .tile:nth-of-type(4)::after {
@@ -151,6 +155,7 @@ hr {
 	top: 0;
 	margin-bottom: 50vh;
 	padding: 2rem;
+	margin-right: 450px;
 }
 
 article {
@@ -170,8 +175,7 @@ article p {
 .title-wrap {
 	align-self: end;
     font-size: 80px;
-	
-    
+	width: max-content;
 }
 
 h2{
@@ -209,7 +213,7 @@ h2{
 		--dest: calc(-100% + var(--gap));
 		animation: translate both linear;
 		animation-timeline: --main;
-		animation-range: entry 150vh exit -100vh;
+		animation-range: entry 150vh exit -20vh;
 	}
 
 	@media(max-width: 768px) {
@@ -227,7 +231,7 @@ h2{
 	}
 	.section--one {
 		view-timeline-name: --section-one;
-		margin-left: 550px;
+		/* margin-left: 550px; */
 
 	}
   @media(min-width: 768px) {
