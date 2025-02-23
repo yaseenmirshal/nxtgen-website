@@ -86,8 +86,6 @@ h1::after {
 	font-size: clamp(1.5rem, 2vw + 1rem, 6rem);
 }
 
-
-
 .tiles {
 	display: grid;
 	width: clamp(var(--lower), var(--mid), var(--upper));
