@@ -89,21 +89,43 @@ h1::after {
 	width: clamp(var(--lower), var(--mid), var(--upper));
 	display: flex;
 	flex-direction: column-reverse;
-	/* justify-self: center; */
-	translate: 0 calc(70% + (var(--gap)));
-	/* translate: 0 calc(-70% - var(--gap)); */
 
-    /* margin-right: 200px; */
+	translate: 0 calc(70% + (var(--gap)));
+	
 	
 }
 .tile {
 	width: 100%;
 	height: 200px; 
 	object-fit: cover; 
-	/* margin-top: 90px; */
 
 }
 
+
+@supports (animation-timeline: scroll()) {
+	:root {
+		timeline-scope: --section-one, --section-two, --section-three,
+			--section-four;
+	}
+
+	.tiles {
+		--orig: 0;
+		--dest: calc(-100% + var(--gap));
+
+		animation: translate both linear;
+		animation-timeline: --main;
+		animation-range: entry 120vh exit -20vh !important;
+	}
+}
+
+	@media(max-width: 768px) {
+		.tiles {
+			--orig: 200%;
+			--dest: 0%;
+			align-self: center;
+
+		}
+	}
 
 
 
@@ -189,30 +211,7 @@ h2{
 	}
 }
 
-@supports (animation-timeline: scroll()) {
-	:root {
-		timeline-scope: --section-one, --section-two, --section-three,
-			--section-four;
-	}
 
-	.tiles {
-		--orig: 0;
-		--dest: calc(-100% + var(--gap));
-
-		animation: translate both linear;
-		animation-timeline: --main;
-		animation-range: entry 150vh exit -20vh; /* Increased exit range */
-	}
-}
-
-	@media(max-width: 768px) {
-		.tiles {
-			--orig: 200%;
-			--dest: 0%;
-			align-self: center;
-
-		}
-	}
 
 	main {
 		view-timeline-name: --main;
