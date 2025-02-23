@@ -1,108 +1,121 @@
-
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - A Pen by Jhey</title>
-  <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
-<link rel="stylesheet" href="scroll.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<script>
-    fetch('scrollanim.html')
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('demo-content').innerHTML = html;
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - A Pen by Jhey</title>
+    <link
+      rel="stylesheet"
+      href="https://public.codepenassets.com/css/normalize-5.0.0.min.css"
+    />
+    <link rel="stylesheet" href="scroll.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <script>
+      fetch("scrollanim.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("demo-content").innerHTML = html;
         })
-        .catch(error => console.error('Error loading page:', error));
-</script>
+        .catch((error) => console.error("Error loading page:", error));
+    </script>
 
-
-<main>
-  <div class="content">
-    <div class="tiles">
-      <img src="https://i.pinimg.com/originals/4a/b5/a4/4ab5a441a00ac705c0e97a8897b49331.gif" style="--r: 45deg" class="tile" alt="Image 1">
-      <img src="https://i.pinimg.com/originals/9e/75/9f/9e759fd37ccd98da121b670249f34afa.gif" style="--r: 275deg" class="tile" alt="Image 2">
-      <img src="https://i.pinimg.com/originals/4a/b5/a4/4ab5a441a00ac705c0e97a8897b49331.gif" style="--r: 190deg" class="tile" alt="Image 3">
-      <img src="https://i.pinimg.com/originals/4a/b5/a4/4ab5a441a00ac705c0e97a8897b49331.gif" style="--r: 45deg" class="tile" alt="Image 4">
-    </div>
-    <section class="section--one">
-      <article>
-        <div class="title-wrap">
-          <h2>Cleanroom Logistics
-        </h2>
+    <main>
+      <div class="content">
+        <div class="tiles">
+          <img
+            src="https://i.pinimg.com/originals/4a/b5/a4/4ab5a441a00ac705c0e97a8897b49331.gif"
+            style="--r: 45deg"
+            class="tile"
+            alt="Image 1"
+          />
+          <img
+            src="https://i.pinimg.com/originals/9e/75/9f/9e759fd37ccd98da121b670249f34afa.gif"
+            style="--r: 275deg"
+            class="tile"
+            alt="Image 2"
+          />
+          <img
+            src="https://i.pinimg.com/originals/4a/b5/a4/4ab5a441a00ac705c0e97a8897b49331.gif"
+            style="--r: 190deg"
+            class="tile"
+            alt="Image 3"
+          />
+          <img
+            src="https://i.pinimg.com/originals/4a/b5/a4/4ab5a441a00ac705c0e97a8897b49331.gif"
+            style="--r: 45deg"
+            class="tile"
+            alt="Image 4"
+          />
         </div>
-        <hr>
-        <div class="content-wrap">
-          <p>
-            Cleanroom Logistics ensures safe handling and transport of
-             sensitive materials in contamination-free environments. 
-             
-           
-          </p>
-        </div>
-      </article>
-      <article>
-        <div class="title-wrap">
-          <h2>Smart Solutions
-        </h2>
-        </div>
-        <hr>
-        <div class="content-wrap">
-          <p>
-            Innovative technologies and strategies that enhance efficiency, automation, and problem-solving across industries.
-          </p>
-        </div>
-      </article>
-      <article>
-        <div class="title-wrap">
-          <h2>Life Science Logistics
-        </h2>
-        </div>
-        <hr>
-        <div class="content-wrap">
-          <p>
-            Specialized storage and transport of pharmaceuticals, biotech products, and medical supplies under strict regulatory conditions.
-
-
-          </p>
-        </div>
-      </article>
-      <article>
-        <div class="title-wrap">
-          <h2>Data Centre Migrations
-        </h2>
-        </div>
-        <hr>
-        <div class="content-wrap">
-          <p>
-            Secure and efficient relocation of IT infrastructure, ensuring minimal downtime and data integrity during transitions.
-          </p>
-        </div>
-      </article>
-      <article>
-        <div class="title-wrap">
-          <h2>Profit.</h2>
-        </div>
-        <hr>
-        <div class="content-wrap">
-          <p>
-            Similique expedita nihil beatae sunt adipisci deserunt culpa,
-            nostrum, amet quis veritatis aperiam, ducimus repellat,
-          
-          </p>
-        </div>
-      </article>
-    </section>
-  </div>
-  <section class="section--two"></section>
-  <section class="section--three"></section>
-  <section class="section--four"></section>
-  <section class="section--five centered">
-   
-  </section>
-</main>
-</body>
+        <section class="section--one">
+          <article>
+            <div class="title-wrap">
+              <h2>Cleanroom Logistics</h2>
+            </div>
+            <hr />
+            <div class="content-wrap">
+              <p>
+                Cleanroom Logistics ensures safe handling and transport of
+                sensitive materials in contamination-free environments.
+              </p>
+            </div>
+          </article>
+          <article>
+            <div class="title-wrap">
+              <h2>Smart Solutions</h2>
+            </div>
+            <hr />
+            <div class="content-wrap">
+              <p>
+                Innovative technologies and strategies that enhance efficiency,
+                automation, and problem-solving across industries.
+              </p>
+            </div>
+          </article>
+          <article>
+            <div class="title-wrap">
+              <h2>Life Science Logistics</h2>
+            </div>
+            <hr />
+            <div class="content-wrap">
+              <p>
+                Specialized storage and transport of pharmaceuticals, biotech
+                products, and medical supplies under strict regulatory
+                conditions.
+              </p>
+            </div>
+          </article>
+          <article>
+            <div class="title-wrap">
+              <h2>Data Centre Migrations</h2>
+            </div>
+            <hr />
+            <div class="content-wrap">
+              <p>
+                Secure and efficient relocation of IT infrastructure, ensuring
+                minimal downtime and data integrity during transitions.
+              </p>
+            </div>
+          </article>
+          <article>
+            <div class="title-wrap">
+              <h2>Profit.</h2>
+            </div>
+            <hr />
+            <div class="content-wrap">
+              <p>
+                Similique expedita nihil beatae sunt adipisci deserunt culpa,
+                nostrum, amet quis veritatis aperiam, ducimus repellat,
+              </p>
+            </div>
+          </article>
+        </section>
+      </div>
+      <section class="section--two"></section>
+      <section class="section--three"></section>
+      <section class="section--four"></section>
+      <section class="section--five centered"></section>
+    </main>
+  </body>
 </html>

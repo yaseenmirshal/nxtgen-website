@@ -1,6 +1,4 @@
 
-
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 @import 'normalize.css';
 
@@ -93,6 +91,8 @@ h1::after {
 	flex-direction: column-reverse;
 	/* justify-self: center; */
 	translate: 0 calc(70% + (var(--gap)));
+	/* translate: 0 calc(-70% - var(--gap)); */
+
     /* margin-right: 200px; */
 	
 }
@@ -103,6 +103,16 @@ h1::after {
 	/* margin-top: 90px; */
 
 }
+
+
+
+
+
+
+
+
+
+
 hr {
 	height: .1px;
 	width: 400px !important;
@@ -119,30 +129,8 @@ hr {
 		justify-self: end;
 	}
 }
-.tile::after,
-.tile::before {
-	content: '';
-	/* background-image: url(https://assets.codepen.io/605876/translucent-panel.png); */
-	position: absolute;
-	width: 100%;
-	aspect-ratio: 1160 / 521;
-	background-size: cover;
-	top: 50%;
-	left: 50%;
-	translate: -50% -50%;
-}
-.tile::after {
-	opacity: 0;
-	/* background-image: url(https://assets.codepen.io/605876/color-panel.png); */
-	filter: hue-rotate(var(--r, 0deg));
-}
-.tile:nth-of-type(1)::after {
-	/* background-image: url(https://assets.codepen.io/605876/bottom-panel.png); */
-	filter: hue-rotate(var(--r, 0deg)) brightness(2);
-}
-.tile:nth-of-type(4)::after {
-	opacity: 1;
-}
+
+
 .content {
 	min-height: 100vh;
 	display: grid;
@@ -206,13 +194,16 @@ h2{
 		timeline-scope: --section-one, --section-two, --section-three,
 			--section-four;
 	}
+
 	.tiles {
 		--orig: 0;
 		--dest: calc(-100% + var(--gap));
+
 		animation: translate both linear;
 		animation-timeline: --main;
-		animation-range: entry 150vh exit -20vh;
+		animation-range: entry 150vh exit -20vh; /* Increased exit range */
 	}
+}
 
 	@media(max-width: 768px) {
 		.tiles {
