@@ -90,7 +90,7 @@ h1::after {
 	display: flex;
 	flex-direction: column-reverse;
 
-	translate: 0 calc(70% + (var(--gap)));
+	translate: 0 calc(57% + (var(--gap)));
 	
 	
 }
@@ -101,6 +101,18 @@ h1::after {
 
 }
 
+
+  
+  /* @media screen and (min-width: 768px) {
+	.tiles {
+	  display: none !important;
+	  
+	}
+	.content{
+		margin-left: 80px;
+	}
+  } */
+ 
 
 @supports (animation-timeline: scroll()) {
 	:root {
@@ -161,7 +173,7 @@ hr {
 	gap: 4rem;
 	position: sticky;
 	top: 0;
-	margin-bottom: 50vh;
+	margin-bottom: 40vh ;
 	padding: 2rem;
 	margin-right: 450px;
 }
@@ -219,6 +231,7 @@ h2{
 	}
 	.section--one {
 		view-timeline-name: --section-one;
+		margin-top: -200px;
 		/* margin-left: 550px; */
 
 	}
